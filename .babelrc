@@ -1,7 +1,4 @@
 {
-    "plugins": [
-        ["transform-object-rest-spread", { "useBuiltIns": true }],
-        "transform-decorators-legacy",
-    ],
-    "presets": ["es2015", "react"]
+    
+    "presets": ["es2015", "stage-0", "react"]
 }

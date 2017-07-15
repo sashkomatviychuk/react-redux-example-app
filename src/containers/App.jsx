@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 
-import Posts from './Posts'
+import Posts from 'containers/Posts'
 
 // TODO: error handling
 // TODO: menu

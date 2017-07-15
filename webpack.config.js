@@ -15,7 +15,7 @@ const webpackConfig = {
     output: {
         path: path.join(__dirname, 'public'),
         publicPath: '/',
-        filename: 'build.js',
+        filename: 'bundle.js',
     },
 
     watch: NODE_ENV === 'development',
@@ -40,12 +40,11 @@ const webpackConfig = {
             {
                 test: /\.(js|jsx)$/,
                 loader: [
+                    'react-hot-loader',
                     'jsx-loader',
                     'babel-loader',
                 ],
-                include: [
-                    path.resolve(__dirname, 'src'),
-                ],
+                include: path.join(__dirname, 'src'),
             },
             {
                 test: /\.png$/, loader: 'url-loader?mimetype=image/png',

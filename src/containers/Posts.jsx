@@ -7,8 +7,8 @@ import PostItem from './PostItem'
 
 class Posts extends React.Component {
 
-    componentDidMount() {
-        const { loadedOnce } = this.props;
+    componentWillReceiveProps(nextProps) {
+        const { loadedOnce } = nextProps;
         !loadedOnce && this.props.dispatch(getPostsList());
     }
 
