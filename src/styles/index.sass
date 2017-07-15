@@ -1,0 +1,33 @@
+*
+    font-family: sans-serif
+
+#root
+    display: flex
+    justify-content: center
+
+ul
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+
+    li
+        flex-wrap: wrap
+        min-width: 400px
+        border: 1px solid #eee
+        padding: 5px
+        list-style: none
+
+        &:not(:last-child)
+            margin-bottom: 4px
+
+        .title
+            color: #000
+
+        .text
+            color: #aaa
+            padding: 4px 0
+            font-size: 14px
+        .likes
+            color: #d66
+            padding: 0 0 4px 0
+            font-size: 14px
